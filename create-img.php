@@ -4,10 +4,13 @@ set_time_limit(0);
 
 $quantity = $_POST['quantity'];
 
+$dirPath = explode('/', getcwd());
+$dir = $dirPath[count($dirPath) - 1];
+
 if (!empty($_COOKIE['TestCookie'])) {
     $images = json_decode($_COOKIE['TestCookie'], true);
     for ($i = 0; $i < $quantity; $i++) {
-        createimageinstantly($images, $i);
+        createimageinstantly($images, $i, $dir);
     }
     setcookie('TestCookie', "", time() - 3600);
 } else {
@@ -16,10 +19,11 @@ if (!empty($_COOKIE['TestCookie'])) {
 
 
 
-function createimageinstantly($array, $i)
+
+function createimageinstantly($array, $i, $dir)
 {
     $x = $y = 1000;
-    $targetFolder = '/random-img/test/';
+    $targetFolder = "/{$dir}/test/";
     $targetPath = $_SERVER['DOCUMENT_ROOT'] . $targetFolder;
     $myImages = [];
     $iter = (count($array) / 2) - 4;
