@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  width: 40%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.d-none {
+    display: none;
+}
+
+/* header {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.container {
+    width: 70%;
+    max-width: 800px;
+    aspect-ratio: 1;
+    margin: 0 auto;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+a {
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+form {
+    margin: 10px 0;
+    display: inline-block;
+} */
+
+.save-images, .submit-btn {
+    display: none;
+}
+
+.btn-generate{
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.698) inset, 0 1px 0 0 rgba(0, 0, 0, 0.075);
+    color: #444;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 0;
+    padding: 8px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #FFFFFF;
+    transition: all 0.2s ease 0s;
+    vertical-align: middle;
+    margin-bottom: 15px;
+}
+.btn-generate:hover {
+    background-color: #F6F6F6;
+    outline: medium none;
+}
+.btn-generate:focus{
+    outline: medium none;
+}
+.btn-generate:active, .btn-generate.active{
+    background-color: #DDDDDD;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075) inset;
+    outline: medium none;
+    transition: none 0s ease 0s;
+}
+
+
+.fileinput__input {
+  display: none;
+}
+.fileinput__face {
+  margin: 0 auto;
+}
+.fileinput__button {
+  transition: 0.2s ease-out;
+  font-size: 20px;
+  line-height: 1.5em;
+  padding: 15px;
+  border: 2px solid;
+  font-family: Calibri, sans-serif;
+  color: #444;
+  min-height: 64px;
+  border-color: #444;
+  background-color: #fff;
+  width: 200px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.fileinput__button:hover {
+  transform: scale(1.1);
+}
+.fileinput__button:active {
+  transform: scale(0.85);
+}
